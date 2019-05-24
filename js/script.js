@@ -23,6 +23,10 @@ window.addEventListener('DOMContentLoaded', function(){
         
         });
     }
+    popupEngineer.addEventListener('click', function(){
+        popupEngineer.style.display = 'none';
+        document.body.style.overflow = '';
+    });
     contactUs.addEventListener('click', function() {
         popupEngineer.style.display = 'block';
         document.body.style.overflow = 'hidden';
