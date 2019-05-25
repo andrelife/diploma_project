@@ -87,13 +87,11 @@ window.addEventListener('DOMContentLoaded', function(){
                     request.send(json);
                 });
             }
-
             const clearInput = () => {
                 for (let i = 0; i < input.length; i++) {
                     input[i].value = '';
                 }
             };
-            
             posData(formData)
                 .then(() => statusMessage.innerHTML = message.loading)
                 .then(() => statusMessage.innerHTML = message.success)
@@ -103,13 +101,71 @@ window.addEventListener('DOMContentLoaded', function(){
     };
     for(let i = 0; i < form.length; i++){
         sendForm(form[i]); 
-        break;
     }
-    sendForm(form);
+    //sendForm(form);
+//tab
+    let glazingSlider = document.querySelector('.glazing_slider'),
+        glazingBlock = document.querySelectorAll('.glazing_block');
+        tabContent = document.querySelector('.tabs-content'); 
+        //console.log(glazingSlider);
     
-    console.log(form);
+    // for(let i=0; i <glazingSlider.length; i++) {
+    //     (function(i) {
+    //         let link = glazingSlider[i];
+    //         link.onclick = function() {
+    //             for(let j=0; j <tabContent.length; j++) {
+    //                 let opacity = window.getComputedStyle(tabContent[j]).opacity;
+    //                 if(opacity == "1") {
+    //                     tabContent[j].style.opacity = "0";
+    //                 }
+    //             }
+    //             tabContent[i].style.opacity = "1";
+    //         }
+    //     })(i);
+    // }
 
 
+// Timer
+let deadline = '2019-05-29';
+function getTimeRemaining(endtime){
+    let t = Date.parse(endtime) - Date.parse(new Date()),
+        seconds = Math.floor((t/1000) % 60),
+        minutes = Math.floor((t/1000/60) % 60),
+        hours = Math.floor((t/1000/60/60) % 24),
+        days = Math.floor((t/(1000*60*60*24)));
+        return {
+            'total' : t,
+            'days' : ('0' + days).slice(-2),
+            'hours' : ('0' + hours).slice(-2),
+            'minutes' :('0' + minutes).slice(-2),
+            'seconds' : ('0' + seconds).slice(-2)
 
+        };
+}
+function setClock(id, endtime) {
+    let timer = document.getElementById('id'),
+        days = document.querySelector('#days'),
+        hours = document.querySelector('#hours'),
+        minutes = document.querySelector('#minutes'),
+        seconds = document.querySelector('#seconds'),
+        timeInterval = setInterval(updateClock, 1000);
+    function updateClock(){
+        let t = getTimeRemaining(endtime);
+            days.textContent = t.days;
+            hours.textContent = t.hours;
+            minutes.textContent = t.minutes;
+            seconds.textContent = t.seconds;
+
+            if(t.total <= 0) {
+                clearInterval(timeInterval);
+                hours.textContent = '00';
+                minutes.textContent = '00';
+                seconds.textContent = '00';
+            }
+            
+    }
+    
+}
+setClock('timer', deadline);    
 
 });
