@@ -20,10 +20,10 @@
   <body>
   
 	  <script src="dist/main.js"></script>
-    <!-- <script src="js/script.js"></script>
-    <script src="js/tabs.js"></script>
+    <script src="js/script.js"></script>
+    <!-- <script src="js/tabs.js"></script>
     <script src="js/calc.js"></script>
-    <script src="js/timer.js"></script> -->
+    <script src="js/timer.js"></script> --> 
     <!-- <script src="src/img.js"></script>  -->
     <header class="header">
       <div class="container">
@@ -118,7 +118,7 @@
             <form class="form main_form" action="#">
               <h2>Запишитесь сегодня на <br><span>бесплатный замер</span></h2>
               <input class="form-control form_input" name="user_name" required type="text" placeholder="Введите ваше имя">
-              <input class="form-control form_input" name="user_phone" required type="text" placeholder="Введите телефон">
+              <input class="form-control form_input mask" name="user_phone" required type="text" placeholder="Введите телефон">
               <button class="text-uppercase btn-block button" name="submit" type="submit">Вызвать замерщика!</button>
               <p class="form_notice">Ваши данные конфиденциальны</p>
             </form>
@@ -162,8 +162,9 @@
         </div>
 
         <!-- Tree -->
+        <div id="tab_content">
         <div class="row tree">
-
+          
           <div class="col-md-6 no-padding">
            <div class="glazing_cold">
              <h3>Холодное</h3>
@@ -198,9 +199,10 @@
              </div>
           </div>
 
-        </div> <!-- /Tree -->
+        </div> <!-- /Tree --></div>
 
         <!-- Aluminum -->
+        <div id="tab_content">
         <div class="row aluminum">
 
           <div class="col-md-6 no-padding">
@@ -237,9 +239,10 @@
              </div>
           </div>
 
-        </div> <!-- /Aluminum -->
+        </div> <!-- /Aluminum --></div>
 
         <!-- Plastic -->
+        <div id="tab_content">
         <div class="row plastic">
 
           <div class="col-md-6 col-md-offset-3 no-padding">
@@ -259,9 +262,10 @@
              </div>
           </div>
 
-        </div> <!-- /Plastic -->
+        </div> <!-- /Plastic --></div>
 
         <!-- French -->
+        <div id="tab_content">
         <div class="row french">
 
           <div class="col-md-6 no-padding">
@@ -298,9 +302,10 @@
              </div>
           </div>
 
-        </div> <!-- /French -->
+        </div> <!-- /French --></div>
 
         <!-- Rise -->
+        <div id="tab_content">
         <div class="row rise">
 
           <div class="col-md-6 no-padding">
@@ -337,7 +342,7 @@
              </div>
           </div>
 
-        </div><!-- /Rise -->
+        </div><!-- /Rise --></div>
 
 
       </div>
@@ -422,7 +427,7 @@
                 <form class="form main_form decoration_form" action="#">
                   <h2>Запишитесь сегодня на <br><span>бесплатный замер</span></h2>
                   <input class="form-control form_input" name="user_name" required type="text" placeholder="Введите ваше имя">
-                  <input class="form-control form_input" name="user_phone" required type="text" placeholder="Введите телефон">
+                  <input class="form-control form_input mask" name="user_phone" required type="text" placeholder="Введите телефон">
                   <button class="text-uppercase btn-block button" name="submit" type="submit">Вызвать замерщика!</button>
                   <p class="form_notice">Ваши данные конфиденциальны</p>
                 </form>
@@ -480,7 +485,7 @@
                 <form class="form main_form decoration_form" action="#">
                   <h2>Запишитесь сегодня на <br><span>бесплатный замер</span></h2>
                   <input class="form-control form_input" name="user_name" required type="text" placeholder="Введите ваше имя">
-                  <input class="form-control form_input" name="user_phone" required type="text" placeholder="Введите телефон">
+                  <input class="form-control form_input mask" name="user_phone" required type="text" placeholder="Введите телефон">
                   <button class="text-uppercase btn-block button" name="submit" type="submit">Вызвать замерщика!</button>
                   <p class="form_notice">Ваши данные конфиденциальны</p>
                 </form>
@@ -532,7 +537,7 @@
                 <form class="form main_form decoration_form" action="#">
                   <h2>Запишитесь сегодня на <br><span>бесплатный замер</span></h2>
                   <input class="form-control form_input" name="user_name" required type="text" placeholder="Введите ваше имя">
-                  <input class="form-control form_input" name="user_phone" required type="text" placeholder="Введите телефон">
+                  <input class="form-control form_input mask" name="user_phone" required type="text" placeholder="Введите телефон">
                   <button class="text-uppercase btn-block button" name="submit" type="submit" >Вызвать замерщика!</button>
                   <p class="form_notice">Ваши данные конфиденциальны</p>
                 </form>
@@ -591,7 +596,7 @@
                 <form class="form main_form decoration_form" action="#">
                   <h2>Запишитесь сегодня на <br><span>бесплатный замер</span></h2>
                   <input class="form-control form_input" name="user_name" required type="text" placeholder="Введите ваше имя">
-                  <input class="form-control form_input" name="user_phone" required type="text" placeholder="Введите телефон">
+                  <input class="form-control form_input mask" name="user_phone" required type="text" placeholder="Введите телефон">
                   <button class="text-uppercase btn-block button" name="submit" type="submit">Вызвать замерщика!</button>
                   <p class="form_notice">Ваши данные конфиденциальны</p>
                 </form>
@@ -735,7 +740,7 @@
             <form class="form main_form" action="#">
               <h2>Запишитесь сегодня на <br><span>бесплатный замер</span></h2>
               <input class="form-control form_input" name="user_name" required type="text" placeholder="Введите ваше имя">
-              <input class="form-control form_input" name="user_phone" required type="text" placeholder="Введите телефон">
+              <input class="form-control form_input mask" name="user_phone" required type="text" placeholder="Введите телефон">
               <button class="text-uppercase btn-block button" name="submit" type="submit">Вызвать замерщика!</button>
               <p class="form_notice">Ваши данные конфиденциальны</p>
             </form>
@@ -816,7 +821,7 @@
                     <form class="form" action="#">
                       <h2>Введите ваши данные <br>и нажмите заказать звонок</h2>
                         <input class="form-control form_input" name="user_name" required type="text" placeholder="Введите ваше имя">
-                        <input class="form-control form_input" name="user_phone" required type="text" placeholder="Введите телефон">
+                        <input class="form-control form_input mask" name="user_phone" required type="text" placeholder="Введите телефон">
                         <button class="text-uppercase btn-block button" name="submit" type="submit">Заказать звонок</button>
                         <p class="form_notice">Перезвоним в течение 10 минут</p>
                     </form>
@@ -834,7 +839,7 @@
                     <form class="form" action="#">
                       <h2>Запишитесь сегодня на <br><span>бесплатный замер</span></h2>
                       <input class="form-control form_input" name="user_name" required type="text" placeholder="Введите ваше имя">
-                      <input class="form-control form_input" name="user_phone" required type="text" placeholder="Введите телефон">
+                      <input class="form-control form_input mask" name="user_phone" required type="text" placeholder="Введите телефон">
                       <button class="text-uppercase btn-block button" name="submit" type="submit">Вызвать замерщика!</button>
                       <p class="form_notice">Ваши данные конфиденциальны</p>
                     </form>
@@ -915,7 +920,7 @@
                     <form class="form" action="#">
                       <h2>Спасибо за обращение! <br>Оставьте свои данные</h2>
                         <input class="form-control form_input" name="user_name" required type="text" placeholder="Введите ваше имя">
-                        <input class="form-control form_input" name="user_phone" required type="text" placeholder="Введите телефон">
+                        <input class="form-control form_input mask" name="user_phone" required type="text" placeholder="Введите телефон">
                         <button class="text-uppercase btn-block button" name="submit" type="submit">Рассчитать стоимость</button>
                         <p class="form_notice">Перезвоним в течение 10 минут</p>
                     </form>

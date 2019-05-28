@@ -369,6 +369,8 @@ textarea:focus {
 }
 
 /*glazing*/
+
+
 .glazing {
   padding: 8rem 0;
 }
@@ -489,7 +491,9 @@ textarea:focus {
 .glazing .aluminum,
 .glazing .plastic,
 .glazing .french,
-.glazing .rise {
+.glazing .rise,
+.glazing .tree,
+.hide {
   display: none;
 }
 
