@@ -19,11 +19,11 @@
 
   <body>
   
-	  <!-- <script src="dist/main.js"></script> -->
-    <script src="js/script.js"></script>
-    <!-- <script src="js/tabs.js"></script> -->
-    <!-- <script src="js/calc.js"></script> -->
-    <!-- <script src="js/timer.js"></script> -->
+	  <script src="dist/main.js"></script>
+    <!-- <script src="js/script.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="js/calc.js"></script>
+    <script src="js/timer.js"></script> -->
     <!-- <script src="src/img.js"></script>  -->
     <header class="header">
       <div class="container">
@@ -162,9 +162,9 @@
         </div>
 
         <!-- Tree -->
-      
-        <div id="tab_content">
-          <div class="row tree"><div class="col-md-6 no-padding">
+        <div class="row tree">
+
+          <div class="col-md-6 no-padding">
            <div class="glazing_cold">
              <h3>Холодное</h3>
              <img src="img/glazing/img_cold.png" alt="#">
@@ -338,9 +338,7 @@
           </div>
 
         </div><!-- /Rise -->
-      </div>
-      </div>
-         
+
 
       </div>
     </section>
@@ -727,8 +725,8 @@
                 <div class="container1">
                   <div class="numbers1"><div ><span id="days">08</span></div><div class="description1">Дней</div></div>
                   <div class="numbers1"><div ><span id="hours">18</span></div><div class="description1">Часов</div></div>
-                  <div class="numbers1"><div ><span id="minutes">33</span></div><div class="description1">Минут</div></div>
-                  <div class="numbers1"><div ><span id="seconds">44</span></div><div class="description1">Секунд</div></div>      
+                  <div class="numbers1"><div id="minutes"><span>33</span></div><div class="description1">Минут</div></div>
+                  <div class="numbers1"><div id="seconds"><span>44</span></div><div class="description1">Секунд</div></div>      
                 </div>
               </div>
           </div>
@@ -810,7 +808,7 @@
 
     <!-- Modals -->
     <!-- Request a call -->
-    <div class="popup" id="pup">
+    <div class="popup">
         <div class="popup_dialog">
             <div class="popup_content text-center">
                 <button type="button" class="popup_close"><strong>&times;</strong></button>
